@@ -94,24 +94,24 @@ export default function AIChat() {
 
     <>
     <AppBar position="static" sx={{ bgcolor: '#171717' }}>
-  <Toolbar>
-    <Box sx={{ flexGrow: 1 }}>
-      <Link href="/" passHref>
-        <Typography variant="h6" component="div" sx={{ cursor: 'pointer', color: 'white' }}>
-          My App
-        </Typography>
-      </Link>
-    </Box>
-    <Button
-      variant="contained"
-      color="secondary"
-      onClick={handleLogout}
-      sx={{ color: 'white', backgroundColor: 'rgba(0, 150, 255, 0.5)' }}
-    >
-      Log Out
-    </Button>
-  </Toolbar>
-</AppBar>
+      <Toolbar>
+        <Box sx={{ flexGrow: 1 }}>
+          <Link href="/" passHref>
+            <Typography variant="h6" component="div" sx={{ cursor: 'pointer', color: 'white' }}>
+              My App
+            </Typography>
+          </Link>
+        </Box>
+        <Button
+          variant="contained"
+          color="secondary"
+          onClick={handleLogout}
+          sx={{ color: 'white', backgroundColor: 'rgba(0, 150, 255, 0.5)' }}
+        >
+          Log Out
+        </Button>
+      </Toolbar>
+    </AppBar>
 
     <Box
       width="100vw"
