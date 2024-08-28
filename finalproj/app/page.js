@@ -1,7 +1,18 @@
+'use client'
 import { SignUpButton, SignInButton, UserButton } from "@clerk/nextjs";
 import styles from './page.module.css'; 
+import { useRouter } from "next/navigation"
+
+
 
 export default function HomePage() {
+
+  const router = useRouter()
+
+  const handleGetStartedClick = () => {
+    router.push('/aichat');
+  };
+
   return (
     <div className={styles.container}>
       <header className={styles.appBar}>
@@ -28,8 +39,10 @@ export default function HomePage() {
             <p>Statement</p>
           </div>
         </div>
+        <button className={styles.getStarted} onClick={handleGetStartedClick}>
+            Get Started
+        </button>
 
-        <button className={styles.getStarted}>Get Started</button>
 
         <div className={styles.bullets}>
           <p>Bullets go here</p>
